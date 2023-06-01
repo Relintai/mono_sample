@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TestSprite.cs" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[node name="Main" type="Node"]
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 515, 262 )
+
+[node name="TestSprite" type="Sprite" parent="Node2D"]
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
