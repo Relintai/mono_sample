@@ -6,6 +6,7 @@ public class TestSprite : Sprite
 	// Declare member variables here. Examples:
 	// private int a = 2;
 	// private string b = "text";
+	private float dt;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -16,7 +17,9 @@ public class TestSprite : Sprite
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(float delta)
 	{
-		//Position += new Vector2(PMath.sin(delta) * 100, PMath.cos(delta) * 100);
-		Position += new Vector2(1, 1);
+		dt += delta;
+		
+		Position = new Vector2((float)Math.Sin(dt) * 100, (float)Math.Cos(dt) * 100);
+		//Position += new Vector2(1, 1);
 	}
 }
