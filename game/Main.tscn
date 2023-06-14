@@ -11,3 +11,4 @@ position = Vector2( 515, 262 )
 [node name="TestSprite" type="Sprite" parent="Node2D"]
 texture = ExtResource( 2 )
 script = ExtResource( 1 )
+XScale = 2.0

@@ -7,7 +7,10 @@ public class TestSprite : Sprite
 	// private int a = 2;
 	// private string b = "text";
 	private float dt;
-
+	
+	[Export]
+	public float XScale;
+	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -19,7 +22,7 @@ public class TestSprite : Sprite
 	{
 		dt += delta;
 		
-		Position = new Vector2((float)Math.Sin(dt) * 100, (float)Math.Cos(dt) * 100);
+		Position = new Vector2((float)Math.Sin(dt) * 100 * XScale, (float)Math.Cos(dt) * 200);
 		//Position += new Vector2(1, 1);
 	}
 }
